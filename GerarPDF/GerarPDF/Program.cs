@@ -156,29 +156,29 @@ using (PdfDocument pdfDocument = new PdfDocument(new PdfWriter(new FileStream(pa
         #endregion
 
 
-        #region tree table
-        Table treeTable = new Table(2).UseAllAvailableWidth();
+        #region three table
+        Table threeTable = new Table(2).UseAllAvailableWidth();
         Cell _cell3 = null;
         _cell3 = new Cell(1, 1).Add(new Paragraph("Pastores Presentes")).SetFontSize(6).SetFont(bold).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
         _cell3 = new Cell(1, 1).Add(new Paragraph("Visitas Especiais")).SetFontSize(6).SetFont(bold).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
 
         _cell3 = new Cell(1, 1).Add(new Paragraph("")).SetHeight(8).SetFontSize(6).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
         _cell3 = new Cell(1, 1).Add(new Paragraph("")).SetHeight(8).SetFontSize(6).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
         _cell3 = new Cell(1, 1).Add(new Paragraph("")).SetHeight(8).SetFontSize(6).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
         _cell3 = new Cell(1, 1).Add(new Paragraph("")).SetHeight(8).SetFontSize(6).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
 
         _cell3 = new Cell(1, 1).SetFontSize(6).SetTextAlignment(TextAlignment.CENTER);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
         _cell3 = new Cell(1, 1).Add(new Paragraph("Pregador: ")).SetFontSize(6).SetTextAlignment(TextAlignment.LEFT);
-        treeTable.AddCell(_cell3);
+        threeTable.AddCell(_cell3);
 
-        document.Add(treeTable);
+        document.Add(threeTable);
         #endregion
 
 
